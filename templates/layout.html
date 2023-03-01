@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/media-query.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Portifólio</h1>
+        <h2>by IPNeuhauser</h2>
+    </header>
+    <menu>
+        <ul>
+            <li id="hamburger"></li>
+            <li><a href="/" rel="_next">Inicio</a></li>
+            <li><a href="/sobre" rel="_next">Sobre</a></li>
+        </ul>
+    </menu>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <div id="social">
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li>Linkedin</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div id="contato">
+            <h3>Contatos </h3>
+            <p><strong>Fone:</strong></p>
+            <p>+55 61 98602-3787</p>
+            <p><strong>Email:</strong></p>
+            <p>ipneuhauser@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
